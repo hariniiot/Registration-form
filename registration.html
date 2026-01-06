@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+        }
+
+        .container {
+            width: 420px;
+            margin: 70px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+
+        form {
+            padding: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 14px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 9px;
+            margin-top: 6px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            background-color: #f9fbfd;
+        }
+
+        .row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        /* Gender radio styling */
+        .gender {
+            margin-top: 6px;
+        }
+
+        .gender input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">User Registration</div>
+
+    <form>
+        <div class="row">
+            <div>
+                <label>First Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Last name</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <label>Email Address</label>
+        <input type="email">
+
+        <label>Mobile number</label>
+        <input type="tel">
+
+        <!-- DOB -->
+        <label>DOB</label>
+        <input type="date">
+
+        <!-- Gender -->
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <!-- Password -->
+        <label>Password</label>
+        <input type="password">
+
+        <label>Confirm password</label>
+        <input type="password">
+
+        <div class="row">
+            <div>
+                <label>City</label>
+                <select>
+                    <option>Chennai</option>
+                    <option>Coimbatore</option>
+                    <option>Madurai</option>
+                </select>
+            </div>
+            <div>
+                <label>Country</label>
+                <select>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">Register Now</button>
+    </form>
+</div>
+
+</body>
+</html>
